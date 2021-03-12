@@ -1,4 +1,4 @@
-const socket = io("ws://localhost:4040");
+const socket = io(process.env.PORT);
 
 const refs = {
   messageEditor: document.querySelector("#message-editor"),
