@@ -1,4 +1,4 @@
-const socket = io(process.env.PORT);
+const socket = io();
 
 const refs = {
   messageEditor: document.querySelector("#message-editor"),
