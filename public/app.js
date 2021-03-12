@@ -39,7 +39,7 @@ function onEditorSubmit(event) {
   refs.input.setAttribute("readonly", "readonly")
 }
 
-refs.input.value = localStorage.getItem("name")
+refs.input.value = JSON.parse(localStorage.getItem('name'))
 
 
 // Добавление нового сообщения
